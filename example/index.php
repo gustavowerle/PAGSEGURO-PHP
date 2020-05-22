@@ -26,11 +26,10 @@ $url = (new BrPagamentos\Requests\PagSeguro())->getUrlFinal($xml->code, true);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PagSeguro PHP</title>
 </head>
 <body>
     <button onclick="PagSeguroLightbox('<?php echo $xml->code;?>')">Pagar com ligthbox</button>
-    <a href="">Pagar com link padrão</a>
 
 <script type="text/javascript" src="https://stc.sandbox.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.lightbox.js"></script>
 </body>
