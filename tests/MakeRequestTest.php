@@ -37,7 +37,7 @@ class MakeRequestTest extends \PHPUnit\Framework\TestCase
         $response = (new MakeRequest())->post($pag_seguro, true);
         $xml = new \SimpleXMLElement((string)$response);
 
-        $url = (new Requests\PagSeguro())->getUrlFinal($xml->code, true);
+        $url = (new Requests\PagSeguro($access))->getUrlFinal($xml->code, true);
 
         $this->assertTrue(is_string($url));
     }

@@ -17,7 +17,7 @@ $pag_seguro->addProduct(2, 'Livro de Laravel', 19.99, 31);
 
 $response = (new BrPagamentos\MakeRequest())->post($pag_seguro, true);
 $xml = new \SimpleXMLElement((string)$response);
-$url = (new BrPagamentos\Requests\PagSeguro())->getUrlFinal($xml->code, true);
+$url = (new BrPagamentos\Requests\PagSeguro($access))->getUrlFinal($xml->code, true);
 
 ?>
 

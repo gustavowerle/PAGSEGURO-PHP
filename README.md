@@ -8,7 +8,7 @@
 Possui um exemplo utilizando PagSeguro Lightbox para realizar o pagamento
 
 ### Pasta src\Payments
-Possui a classe Pagseguro que contem todos os atributos utilizados na requisição do pagamento.
+Possui a classe PagSeguro que contem todos os atributos utilizados na requisição do pagamento.
 
 ### Pasta src\Requests
 Possui a classe que monta a requisição para enviar ao PagSeguro.
